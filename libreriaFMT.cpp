@@ -48,10 +48,19 @@ int main(){
 
     // Esto no se puede hacer con cout a menos que se use un bucle for
     // cout << "Arreglo: " << numeros;
+    
+    //Alineando el Texto
 
-    fmt::print("{:_<30}\n", "Texto Izquierda"); //"Texto Izquierda" contiene 15 caracteres, en este caso se ajusta un campo de 16 espacios para ajustar el texto
-    fmt::print("{:_>30}\n", "Texto Derecha"); // "Texto Derecha" contiene 13 caracteres, ... 14 espacios para ajustar el texto
-    fmt::print("{:_^30}\n", "Texto centrado"); // "Texto centrado" contiene 14 caracteres, ...  16 espacios para ajustar el texto
+    cout << endl;
+
+    //"Texto Izquierda" contiene 15 caracteres, en este caso se ajusta un campo de 30 espacios para ajustar el texto
+    fmt::print("{:_<30}\n", "Texto Izquierda");
+    // "Texto Derecha" contiene 13 caracteres, ... 30 espacios para ajustar el texto
+    fmt::print("{:_>30}\n", "Texto Derecha");
+    // "Texto centrado" contiene 14 caracteres, ...  30 espacios para ajustar el texto
+    fmt::print("{:_^30}\n", "Texto centrado");
+
+    cout << endl;
 
     return 0;
 }
